@@ -334,7 +334,7 @@ let g:mkdp_combine_preview_auto_refresh = 1
 
 
 " example
-nmap <C-s> <Plug>MarkdownPreview
+nmap <C-a> <Plug>MarkdownPreview
 nmap <M-s> <Plug>MarkdownPreviewStop
 nmap <C-p> <Plug>MarkdownPreviewToggle
 
