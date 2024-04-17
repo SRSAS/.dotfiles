@@ -91,11 +91,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias art-link='cd ~/Documents/Art-Link'
-alias art-link-main='cd ~/Documents/Art-Link/backend/src/main'
-alias art-link-test='cd ~/Documents/Art-Link/backend/src/test'
-alias art-link-app='cd ~/Documents/Art-Link/backend/src/main/java/com/artlink/app'
-alias git-tree='git log --oneline --graph --decorate --all'
+alias artlink='cd ~/Documents/personalProjects/Art-Link'
+alias artlinkbe='artlink && cd backend'
+alias artlinkapp='artlink && cd /backend/src/main/java/com/artlink/app'
+alias gittree='git log --oneline --graph --decorate --all'
+alias prjco='cd ~/Documents/faculdade/compiladores/projeto/'
+alias prjgraf='cd ~Documents/faculdade/computacao_grafica/projeto/'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
