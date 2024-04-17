@@ -93,7 +93,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # custom aliases
-alias pp='cd ~Documents/personalProjects'
+alias pp='cd ~/Documents/personalProjects'
 alias artlink='pp && cd Art-Link'
 alias artlinkbe='artlink && cd backend'
 alias artlinkapp='artlink && cd backend/src/main/java/com/artlink/app'
