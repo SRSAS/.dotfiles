@@ -93,10 +93,12 @@ alias la='ls -A'
 alias l='ls -CF'
 alias artlink='cd ~/Documents/personalProjects/Art-Link'
 alias artlinkbe='artlink && cd backend'
-alias artlinkapp='artlink && cd /backend/src/main/java/com/artlink/app'
+alias artlinkapp='artlink && cd backend/src/main/java/com/artlink/app'
 alias gittree='git log --oneline --graph --decorate --all'
-alias prjco='cd ~/Documents/faculdade/compiladores/projeto/'
-alias prjgraf='cd ~Documents/faculdade/computacao_grafica/projeto/'
+alias gitfiles='git ls-tree -r master --name-only'
+alias faculdade='cd ~/Documents/faculdade'
+alias prjco='faculdade && cd compiladores/projeto/'
+alias prjgraf='faculdade && cd computacao_grafica/projeto/'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
