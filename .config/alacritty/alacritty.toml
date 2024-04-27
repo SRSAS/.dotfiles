@@ -1,0 +1,14 @@
+# $HOME/.config/alacritty/alacritty.toml
+# by Sebastião Sousa
+
+[font]
+
+normal.family = "JetBrainsMono NF"
+normal.style = "Regular"
+bold.family = "JetBrainsMono NF"
+bold.style = "Bold"
+italic.family = "JetBrainsMono NF"
+italic.style = "Italic"
+bold_italic.family = "JetBrainsMono NF"
+bold_italic.style = "Bold Italic"
+
