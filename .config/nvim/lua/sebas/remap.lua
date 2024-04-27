@@ -72,3 +72,7 @@ vim.keymap.set("n", "<C-up>", "<C-w>+")
 vim.keymap.set("n", "<C-down>", "<C-w>-")
 vim.keymap.set("n", "<C-left>", "<C-w>>")
 vim.keymap.set("n", "<C-right>", "<C-w><")
+
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<CR>")
+vim.keymap.set("n", "<leader>sp", "<cmd>MarkdownPreviewStop<CR>")
+vim.keymap.set("n", "<leader>tp", "<cmd>MarkdownPreviewToggle<CR>")
