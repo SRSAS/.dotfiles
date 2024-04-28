@@ -7,7 +7,7 @@ echo "Installing requirements..."
 sudo zypper refresh && sudo zypper install git gh bspwm picom polybar neovim nitrogen sxhkd alacritty firefox
 
 echo "Installing development environment..."
-sudo zypper install maven python go java gcc nodejs npm
+sudo zypper install maven python go java gcc nodejs npm lua
 
 # --------------
 # AUTHORIZATIONS
@@ -35,7 +35,7 @@ done
 
 cp ./.ssh/config "$HOME/.ssh/config"
 
-cp ./.wallpapers "$HOME/.wallpapers"
+cp -r  ./.wallpapers "$HOME/.wallpapers"
 
 # -----
 # BSPWM
@@ -53,9 +53,12 @@ chmod +x bspwmrc
 
 echo "Installing neovim plugins..."
 
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 cd "$HOME/.config/nvim/lua/sebas/" || exit
 
-nvim packer.lua +so +PackerSync
+nvim packer.lua +so +PackerSync +q
 
 # ------------- 
 # SET WALLPAPER
