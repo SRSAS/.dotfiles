@@ -25,7 +25,7 @@ read -rp "Press Enter to continue" </dev/tty
 
 echo "Copying dotfiles..."
 
-for file in "$HOME"/.config/*; do
+for file in ./.config/*; do
     cp -rf "$file" "$HOME/.config/"
 done
 
