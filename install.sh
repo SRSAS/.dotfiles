@@ -4,10 +4,10 @@
 # SOFTWARE INSTALLATION 
 # ---------------------
 echo "Installing requirements..."
-sudo zypper refresh && sudo zypper install git gh bspwm picom polybar neovim nitrogen sxhkd alacritty firefox
+sudo zypper refresh && sudo zypper install git gh bspwm picom polybar neovim nitrogen sxhkd alacritty firefox neofetch eva
 
 echo "Installing development environment..."
-sudo zypper install maven python go java gcc nodejs npm lua
+sudo zypper install maven python go java gcc nodejs npm lua clang make cmake
 
 # --------------
 # AUTHORIZATIONS
@@ -24,6 +24,10 @@ read -rp "Press Enter to continue" </dev/tty
 # -------------
 
 echo "Copying dotfiles..."
+
+rm "$HOME/.bashrc"
+
+cp ./.bashrc "$HOME/.bashrc"
 
 for file in ./.config/*; do
     cp -rf "$file" "$HOME/.config/"
@@ -56,9 +60,9 @@ echo "Installing neovim plugins..."
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-cd "$HOME/.config/nvim/lua/sebas/" || exit
+#cd "$HOME/.config/nvim/lua/sebas/" || exit
 
-nvim packer.lua +so +PackerSync +q
+#nvim packer.lua +so +PackerSync +q
 
 # ------------- 
 # SET WALLPAPER
