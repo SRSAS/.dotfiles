@@ -7,7 +7,7 @@ echo "Installing requirements..."
 sudo zypper refresh && sudo zypper install git gh bspwm picom polybar neovim nitrogen sxhkd alacritty firefox neofetch eva
 
 echo "Installing development environment..."
-sudo zypper install maven python go java gcc nodejs npm lua clang make cmake
+sudo zypper install maven python go java gcc nodejs npm lua clang make cmake gcc-c++
 
 # --------------
 # AUTHORIZATIONS
