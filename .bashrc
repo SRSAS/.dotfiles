@@ -62,10 +62,11 @@ alias pp='cd ~/Documents/personalProjects'
 alias artlink='pp && cd Art-Link'
 alias artlinkbe='artlink && cd backend'
 alias artlinkapp='artlink && cd backend/src/main/java/com/artlink/app'
+alias xLibEngine='pp & cd Xlib-Engine'
 
 alias faculdade='cd ~/Documents/faculdade'
 alias prjco='faculdade && cd compiladores/projeto/'
-alias prjgraf='faculdade && cd computacao_grafica/projeto/'
+alias prjgraf='faculdade && cd computacao_grafica/projecto/'
 
 alias tt='cd ~/Documents/test/'
 
